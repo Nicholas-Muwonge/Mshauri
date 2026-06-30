@@ -1,0 +1,106 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(28, 42, 33, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 50;
+}
+
+.modal-card {
+  background: var(--color-bg-raised);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  max-width: 420px;
+  width: 100%;
+}
+
+.modal-title {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.modal-sub {
+  font-size: 13.5px;
+  color: var(--color-ink-soft);
+  line-height: 1.5;
+  margin: 0 0 22px;
+}
+
+.pay-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.pay-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+
+.pay-option-active {
+  border-color: var(--color-primary);
+  background: var(--color-primary-pale);
+}
+
+.pay-option input {
+  accent-color: var(--color-primary);
+}
+
+.pay-option div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.pay-option strong {
+  font-size: 14px;
+}
+
+.pay-option span {
+  font-size: 12.5px;
+  color: var(--color-ink-soft);
+}
+
+.modal-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.btn-secondary {
+  flex: 1;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  font-size: 14.5px;
+  color: var(--color-ink);
+}
+
+.modal-actions .btn-primary {
+  flex: 1.4;
+  padding: 14px;
+  font-size: 14.5px;
+}
+
+.pay-success {
+  text-align: center;
+  padding: 8px 0;
+}
+
+.pay-success i {
+  font-size: 40px;
+  color: var(--color-primary);
+  margin-bottom: 12px;
+  display: block;
+}
